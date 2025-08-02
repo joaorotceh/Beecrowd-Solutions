@@ -27,13 +27,15 @@ int main()
         (notas[3] * peso_4)
     ) / somaPesos;
 
-    if (notaFinal < notaReprovado) printf("Media: %.1lf\nAluno reprovado.\n", notaFinal);
-    else if (notaFinal >= notaAprovado) printf("Media: %.1lf\nAluno aprovado.\n", notaFinal);
+    printf("Media: %.1lf\n", notaFinal);
+
+    if (notaFinal < notaReprovado) printf("Aluno reprovado.\n");
+    else if (notaFinal >= notaAprovado) printf("Aluno aprovado.\n");
     else
     {
         double notaAdicional;
         
-        printf("Media: %.1lf\nAluno em exame.\n", notaFinal);
+        printf("Aluno em exame.\n");
         scanf("%lf", &notaAdicional);
         printf("Nota do exame: %.1lf\n", notaAdicional);
 

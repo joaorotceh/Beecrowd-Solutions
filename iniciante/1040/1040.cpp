@@ -32,13 +32,15 @@ int main()
 
     cout << std::fixed << std::setprecision(1);
 
-    if (notaFinal < notaReprovado) cout << "Media: " << notaFinal << "\nAluno reprovado.\n";
-    else if (notaFinal >= notaAprovado) cout << "Media: " << notaFinal << "\nAluno aprovado.\n";
+    cout << "Media: " << notaFinal;
+
+    if (notaFinal < notaReprovado) cout << "\nAluno reprovado.\n";
+    else if (notaFinal >= notaAprovado) cout << "\nAluno aprovado.\n";
     else
     {
         double notaAdicional;
         
-        cout << "Media: " << notaFinal << "\nAluno em exame.\n";
+        cout << "\nAluno em exame.\n";
         std::cin >> notaAdicional;
         cout << "Nota do exame: " << notaAdicional << '\n';
 

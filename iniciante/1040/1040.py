@@ -11,7 +11,6 @@ peso_4 = 1
 
 somaPesos = peso_1 + peso_2 + peso_3 + peso_4
 
-
 notas = list(map(float, input().split()))
 
 notaFinal = float((
@@ -21,10 +20,12 @@ notaFinal = float((
     (notas[3] * peso_4)
     ) / somaPesos)
 
-if notaFinal < notaReprovado: print(f"Media: {notaFinal:.1f}\nAluno reprovado.")
-elif notaFinal >= notaAprovado: print(f"Media: {notaFinal:.1f}\nAluno aprovado.")
+print(f"Media: {notaFinal:.1f}")
+
+if notaFinal < notaReprovado: print("Aluno reprovado.")
+elif notaFinal >= notaAprovado: print("Aluno aprovado.")
 else:
-    print(f"Media: {notaFinal:.1f}\nAluno em exame.")
+    print("Aluno em exame.")
 
     notaAdicional = float(input())
     print(f"Nota do exame: {notaAdicional}")

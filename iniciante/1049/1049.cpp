@@ -22,8 +22,7 @@ void resultadoAnimal(string tipos[])
 int main()
 {
     const int tamanho = 3;
-    string tipo_1, tipo_2, tipo_3;
-    string tipos[] = {tipo_1, tipo_2, tipo_3};
+    string tipos[tamanho];
 
     for (int i = 0; i < tamanho; i++) std::cin >> tipos[i];
 

@@ -25,14 +25,12 @@ def resultadoAnimal(tipos : list):
         }
     }
 
-    resultado = esquemaTipos[tipos[0]][tipos[1]][tipos[2]]
-
-    print(resultado)
+    print(esquemaTipos[tipos[0]][tipos[1]][tipos[2]])
 
 def main():
     tipos = []
 
-    for i in range(3):
+    for _ in range(3):
         tipos.append(str(input()))
     
     resultadoAnimal(tipos)

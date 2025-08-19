@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void resultadoAnimal(char *tipos[])
+void resultadoAnimal(char tipos[][20])
 {
     char *resultado = (strcmp(tipos[0], "vertebrado") == 0) ? 
         ((strcmp(tipos[1], "ave") == 0) ? 
@@ -20,11 +20,9 @@ void resultadoAnimal(char *tipos[])
 int main()
 {
     const int tamanho = 3;
+    char tipos[tamanho][20];
 
-    char tipo_1[20], tipo_2[20], tipo_3[20];
-    char *tipos[] = {tipo_1, tipo_2, tipo_3};
-
-    for (int i = 0; i < tamanho; i++) scanf("%s", tipos[i]);
+    for (int i = 0; i < tamanho; i++) scanf("%s", &tipos[i]);
 
     resultadoAnimal(tipos);
 

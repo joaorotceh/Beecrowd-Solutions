@@ -18,8 +18,7 @@ void resultado(int numero)
         {31, "Belo Horizonte"}
     };
 
-    if (DDD.count(numero)) std::cout << DDD[numero] << '\n';
-    else std::cout << "DDD nao cadastrado\n";
+    std::cout << ((DDD.count(numero)) ? DDD[numero] : "DDD nao cadastrado") << '\n';
 }
 
 int main()

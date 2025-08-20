@@ -13,12 +13,7 @@ def resultado(numero : int):
         31 : "Belo Horizonte"
     }
 
-    cidade = DDD.get(numero)
-
-    if cidade is None:
-        print("DDD nao cadastrado")
-    else:
-        print(cidade)
+    print("DDD nao cadastrado" if not numero in DDD else DDD[numero])
 
 def main():
     numero = int(input())
